@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Encabezado fijo */
+header {
+    background-color: #095E63; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 0; /* Espaciado interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Efecto de sombra */
+    position: fixed; /* Fija el encabezado en la parte superior */
+    top: 0; /* Lo ubica en la parte superior */
+    left: 0; /* Lo alinea al borde izquierdo */
+    width: 100%; /* Ocupa todo el ancho */
+    z-index: 1000; /* Se asegura de estar por encima del contenido */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header .logo {
+    height: 50px; /* Ajusta el tamaño del logo */
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px; /* Espaciado entre elementos */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #FFD700; /* Color dorado al pasar el ratón */
+}
+
+/* Espaciado adicional para el contenido */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding-top: 80px; /* Espacio para que el contenido no quede oculto detrás del header */
+}
+
+/* Menú */
+nav {
+    flex-grow: 2; /* Permite que el menú ocupe todo el espacio restante */
+    display: flex;
+    justify-content: flex-end; /* Alinea el menú a la derecha */
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 50px; /* Espaciado entre las opciones del menú */
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #f1f1f1;
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #095E63;
+    color: rgb(227, 223, 223);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #095E63;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #095E63;
+    color: rgb(24, 15, 15);
+}/* Contenedor general */
+#location {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+/* Títulos */
+#location h1, #location h2 {
+    color: #095E63;
+    margin-bottom: 20px;
+}
+
+/* Dirección */
+#location address {
+    font-style: normal;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Mapa */
+.map-container {
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Horarios */
+#location ul {
+    list-style: none;
+    padding: 0;
+    color: #555;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+#location ul li {
+    background: #e8f6f6;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Cómo llegar */
+#location p {
+    margin-top: 20px;
+    color: #666;
+}
